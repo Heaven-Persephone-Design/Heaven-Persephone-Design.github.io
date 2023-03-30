@@ -1,0 +1,114 @@
+/* Heaven Persephone Design */
+
+/* Copyright Heaven Persehone */
+/* 2023 - All Rights Reserved */
+/* Heaven Persephone Design is a trademark */
+/* Version 001 */
+/* Published at ##:## on Friday 31 March 2023 */
+/* This file and all information contained herein is the sole property of Heaven Persephone */
+/* No intellectual property rights are granted by the delivery of this file or the disclosure of its content */
+/* This file shall not be reproduced without the express written consent of Heaven Persephone */
+/* This file and its content shall not be used for any purpose other than that for which it is supplied */
+
+.content {
+    /* Change the container so we can display the error message in the middle of the screen */
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.content, .header-center {
+    /* This should automatically expand to the content height */
+    flex: 0 1 auto;
+}
+
+.content, .error-top-separator {
+    /* This should automatically expand to the content height */
+    flex: 0 1 auto;
+}
+
+.content, .error-page {
+    /* This should automatically expand fill the remaining space */
+    flex: 1 1 auto;
+}
+
+.content, .error-bottom-separator {
+    /* This should automatically expand to the content height */
+    flex: 0 1 auto;
+}
+
+.content, .footer {
+    /* This should automatically expand to the content height */
+    flex: 0 1 auto;
+}
+
+.error-page {
+    /* Align the error message components in the middle of the screen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.error-title {
+    /* No margin */
+    margin: 0;
+    /* No padding */
+    padding: 0 0 0.25em 0;
+    /* Text colour to hot pink*/
+    color: #d74169;
+    /* Set the font */
+    font-family: 'Six Caps', sans-serif;
+    /* Set the size */
+    font-size: 8em;
+    /* Make text uppercase */
+    text-transform: uppercase;
+}
+
+.error-message-line-1 {
+    /* No margin */
+    margin: 0;
+    /* Set padding */
+    padding: 0 0 1em 0;
+    /* Set the size */
+    font-size: 1em;
+}
+
+.error-message-line-2 {
+    /* No margin */
+    margin: 0;
+    /* Set padding */
+    padding: 0 0 4em 0;
+    /* Set the size */
+    font-size: 1em;
+}
+
+.button-home {
+    /* Black background */
+    background-color: black;
+    /* Set the border */
+    border: 0.25em solid #d74169;
+    /* Add curved borders */
+    border-radius: 10em;
+    /* Hot pink text */
+    color: #d74169;
+    /* Add some padding */
+    padding: 1em;
+    /* No text decoration */
+    text-decoration: none;
+    /* Set the font size */
+    font-size: 1em;
+    /* Set the font weight */
+    font-weight: 600;
+    /* Add the transition */
+    transition: background-color 0.5s ease, color 0.5s ease;
+    /* Change cursor */
+    cursor: pointer;
+}
+
+.button-home:hover {
+    /* Change background to hot pink*/
+    background-color: #d74169;
+    /* Change colour to black */
+    color: black;
+}

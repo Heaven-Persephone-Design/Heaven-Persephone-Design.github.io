@@ -1,0 +1,185 @@
+/* Heaven Persephone Design */
+
+/* Copyright Heaven Persehone */
+/* 2023 - All Rights Reserved */
+/* Heaven Persephone Design is a trademark */
+/* Version 001 */
+/* Published at ##:## on Friday 31 March 2023 */
+/* This file and all information contained herein is the sole property of Heaven Persephone */
+/* No intellectual property rights are granted by the delivery of this file or the disclosure of its content */
+/* This file shall not be reproduced without the express written consent of Heaven Persephone */
+/* This file and its content shall not be used for any purpose other than that for which it is supplied */
+
+body, html {
+    /* No margin */
+    margin: 0;
+    /* No border */
+    border: 0;
+    /* Add some padding */
+    padding: 2.75em;
+    /* Background colour */
+    background-color: black;
+}
+
+.content {
+    /* Font colour */
+    color: white;
+    /* Font family */
+    font-family: "Montserrat", sans-serif;
+    /* Font size */
+    font-size: 1em;
+}
+
+.header, .header-center {
+    /* No bullet points */
+    list-style-type: none;
+    /* No margin */
+    margin: 0;
+    /* No padding */
+    padding: 0;
+    /* Hide the overflow */
+    overflow: hidden;
+    /* Vertically center the items */
+    display: flex;
+    align-items: center;
+}
+
+.header-item, .header-link {
+    /* So we can manipulate each item individually */
+    display: block;
+    /* Text colour to hot pink */
+    color: #d74169;
+    /* No additional formatting */
+    text-decoration: none;
+}
+
+.header-push {
+    /* Display on the right */
+    margin-left: auto;
+}
+
+.header-left {
+    /* Add some padding */
+    /* The left-most item needs to be padded separately */
+    padding: 0 3em 0 0;
+}
+
+.header-middle {
+    /* Add some padding */
+    /* The middle items can all be padded together */
+    padding: 0 3em;
+}
+
+.header-right {
+    /* Add some padding */
+    /* The right-most item needs to be padded separately */
+    padding: 0 0 0 3em;
+}
+
+.header-center {
+    /* Place the logo in the center horziontally for the 404 page */
+    justify-content: center;
+    flex: 0 1 auto;
+}
+
+.header-link {
+    /* Make text lowercase */
+    text-transform: lowercase;
+    /* Fade in the underline when hovering */
+    text-decoration: underline solid transparent 0.125em;
+    transition: text-decoration 0.5s ease;
+}
+
+.header-link:hover {
+    /* Add underline */
+    text-decoration: underline solid #d74169 0.125em;
+}
+
+.separator {
+    /* Width to 100% */
+    width: 100%;
+    /* Height to 5em */
+    height: 5em;
+}
+
+.feed, .error-page {
+    /* Width to 100% */
+    width: 100%;
+}
+
+.watermark {
+    display: none;
+}
+
+.footer {
+    /* No margin */
+    margin: 0;
+    /* No padding */
+    padding: 0;
+    /* Vertically center the items */
+    display: flex;
+    align-items: center;
+}
+
+.footer-left {
+    /* Align the text to the left */
+    text-align: left;
+}
+
+.footer-right {
+    /* Display on the right */
+    margin-left: auto;
+    /* Align the text to the right */
+    text-align: right;
+}
+
+.footer-item {
+    /* No margin */
+    margin: 0;
+    /* No padding */
+    padding: 0;
+}
+
+.footer-logotype {
+    /* Text colour to hot pink*/
+    color: #d74169;
+    /* Set the font */
+    font-family: 'Six Caps', sans-serif;
+    /* Set the size */
+    font-size: 4em;
+    /* Make text uppercase */
+    text-transform: uppercase;
+}
+
+.footer-link {
+    /* Text colour to just below white */
+    color: #dddddd;
+    /* Add underline */
+    text-decoration: underline solid #dddddd 0.0625em;
+    /* Change colour to full white when hovering */
+    transition: color 0.5s ease, text-decoration 0.5s ease;
+}
+
+.footer-link:hover {
+    /* Change colour to full white */
+    color: white;
+    text-decoration: underline solid white 0.0625em;
+}
+
+.footer-top {
+    /* Add some padding */
+    /* The top item needs to be padded separately */
+    padding: 0 0 0.25em 0;
+}
+
+.footer-middle {
+    /* Add some padding */
+    /* The middle items can all be padded together */
+    padding: 0.25em 0;
+}
+
+.footer-bottom {
+    /* Add some padding */
+    /* The bottom item needs to be padded separately */
+    padding: 0.25em 0 0 0;
+}
