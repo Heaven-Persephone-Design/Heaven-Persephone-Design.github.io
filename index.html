@@ -1,10 +1,10 @@
 <!-- Heaven Persephone Design -->
 
 <!-- Copyright Heaven Persephone -->
-<!-- 2023 - All Rights Reserved -->
+<!-- 2024 - All Rights Reserved -->
 <!-- Heaven Persephone Design is a trademark -->
-<!-- Version 001 -->
-<!-- Published at ##:## on Friday 31 March 2023 -->
+<!-- Version 002 -->
+<!-- Published at 01:00 on Tuesday 30 January 2024 -->
 <!-- This file and all information contained herein is the sole property of Heaven Persephone -->
 <!-- No intellectual property rights are granted by the delivery of this file or the disclosure of its content -->
 <!-- This file shall not be reproduced without the express written consent of Heaven Persephone -->
@@ -30,6 +30,21 @@
 
 <!-- Stylesheets -->
 <link href="css/style.css" rel="stylesheet" />
+
+<!-- JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- Overlay -->
+<div id="hpd-overlay" class="overlay">
+    <!-- Close button -->
+    <a href="javascript:void(0)" class="overlay-close" onclick="closeOverlay()">&times;</a>
+    <!-- Overlay content -->
+        <div class="overlay-content">
+            <p class="overlay-title">👀</h1>
+            <p class="overlay-subtitle"><strong>Something exciting is coming...</strong></p>
+            <p class="overlay-text"><span id="phrases">Adding some ✨ sparkles ✨</span></p>
+        </div>
+</div>
 
 <!-- Main Content -->
 <div class="content">
@@ -68,6 +83,24 @@
         </div>
     </div>
 </div>
+
+<!-- Script for overlay -->
+<script  type="text/javascript">
+    function closeOverlay() {
+        document.getElementById("hpd-overlay").style.height = "0%";
+    }
+</script>
+
+<!-- Script for overlay phrases -->
+<script type="text/javascript">
+    (function () {
+        var phrases = ["Adding some ✨ sparkles ✨","Saving main-thingyy2.indd 💾","Paying the developers 🤑","Loading ChatGPT 😎","Thinking of a plan B 😭" ],
+        i = 1;
+        setInterval(function(){ $('#phrases').fadeOut(function(){
+            $(this).html(phrases[(i = (i + 1) % phrases.length)]).fadeIn();
+        }); }, 3000)
+    })();
+</script>
 
 <!-- Script for Curator -->
 <script type="text/javascript">

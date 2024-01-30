@@ -1,10 +1,10 @@
 /* Heaven Persephone Design */
 
 /* Copyright Heaven Persehone */
-/* 2023 - All Rights Reserved */
+/* 2024 - All Rights Reserved */
 /* Heaven Persephone Design is a trademark */
-/* Version 001 */
-/* Published at ##:## on Friday 31 March 2023 */
+/* Version 002 */
+/* Published at 01:00 on Tuesday 30 January 2024 */
 /* This file and all information contained herein is the sole property of Heaven Persephone */
 /* No intellectual property rights are granted by the delivery of this file or the disclosure of its content */
 /* This file shall not be reproduced without the express written consent of Heaven Persephone */
@@ -19,6 +19,102 @@ body, html {
     padding: 2.75em;
     /* Background colour */
     background-color: black;
+}
+
+.overlay {
+    /* Full screen */   
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    /* Disable vertical scroll */
+    overflow-y: hidden;
+    /* Sit on top */
+    z-index: 10;
+    /* Stay in place */
+    position: fixed;
+    /* Font colour */
+    color: white;
+    /* Font family */
+    font-family: "Montserrat", sans-serif;
+    /* Fallback background */
+    background-color: rgb(215,65,105);
+    /* Background with opactity */
+    background-color: rgba(215,65,105, 0.88);
+    /* Transition effect to slide up */
+    transition: 0.5s;
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    /* Align to the center */
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    /* Avoid conflict with the close button on smaller screens */
+    margin-top: 1em;
+}
+
+.overlay a {
+    /* So we can manipulate each item individually */
+    display: block;
+    /* Add some padding */
+    padding: 0.5em;
+}
+
+.overlay .overlay-close {
+    /* Align to the top-right corner */
+    position: absolute;
+    top: 0.5em;
+    right: 1em;
+    /* Font colour */
+    color: #cccccc;
+    /* Set the size */
+    font-size: 3.75em;
+    /* Remove underline*/
+    text-decoration: none;
+}
+
+.overlay a:hover {
+    /* Fade the close button to bright white when hovering */
+    color: #ffffff;
+    transition: 0.5s ease;
+}
+
+@media screen and (max-height: 500px) {
+/* When the height of the screen is less than 450 pixels, change the font size and re-position the close button so they don't overlap */
+    .overlay-title {
+        font-size: 1.25em;
+    }
+    .overlay-subtitle {
+        font-size: 1.25em;
+    }
+    .overlay-text {
+        font-size: 1.25em;
+    }
+    .overlay .overlay-close {
+        font-size: 2.5em;
+        top: 1em;
+        right: 1.5em;
+    }
+}
+
+.overlay-title {
+    /* No margin */
+    margin: 0;
+    /* Font size */
+    font-size: 10em;
+}
+
+.overlay-subtitle {
+    /* Font size */
+    font-size: 2em;
+}
+
+.overlay-text {
+    /* Font size */
+    font-size: 1.25em;
 }
 
 .content {
